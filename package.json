@@ -1,6 +1,6 @@
 {
   "name": "fahs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Prettily inspect variables and log to console.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,6 +20,14 @@
   ],
   "type": "module",
   "author": "artifishvr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artifishvr/fahs"
+  },
+  "homepage": "https://github.com/artifishvr/fahs",
+  "bugs": {
+    "url": "https://github.com/artifishvr/fahs/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.10.7",
