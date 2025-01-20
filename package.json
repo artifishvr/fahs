@@ -1,6 +1,6 @@
 {
   "name": "inspector",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Prettily inspect variables and log errors",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsx watch ./src/index.ts",
-    "test": "echo \"TODO\" && exit 1"
+    "dev": "tsx watch ./src/index.ts"
   },
   "keywords": [
     "debug",
