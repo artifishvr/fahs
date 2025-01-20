@@ -1,7 +1,5 @@
 import chalk from "chalk";
 
-// TODO better object support
-
 export function inspect(variable: any) {
   // We make an error to get the stack trace
   const stack = new Error().stack;
@@ -20,12 +18,17 @@ export function inspect(variable: any) {
     type = typeof variable;
   }
 
+  let formattedValue =
+    typeof variable === "object"
+      ? JSON.stringify(variable, null, 2) // Pretty print objects with 2 space indentation
+      : String(variable);
+
   console.log(
     chalk.white(
       chalk.dim("Inspecting from ") +
         chalk.gray(`${filePath}:${lineNumber}\n`) +
         chalk.yellow(`Type: ${type}\n`) +
-        chalk.green(variable) +
+        chalk.green(formattedValue) +
         "\n"
     )
   );

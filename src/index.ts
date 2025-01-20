@@ -17,4 +17,4 @@ info("Hello, world!", "Label");
 info("Hello, world!", { label: "Label", timestamp: false });
 info("Hello, world!", false);
 
-export { inspect };
+export { inspect, info, warn, error, success };
