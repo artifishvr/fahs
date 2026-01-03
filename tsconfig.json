@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2019",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es6",
+    "esModuleInterop": true,
     "declaration": true,
     "outDir": "./dist"
   },

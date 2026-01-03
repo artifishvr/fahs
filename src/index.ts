@@ -1,5 +1,5 @@
-import { inspect } from "./inspect";
-import { info, warn, error, success } from "./prettyprint";
+import { inspect } from "./inspect.js";
+import { info, warn, error, success } from "./prettyprint.js";
 
 // inspect([1, 2, 3]);
 // inspect({ a: 1, b: 2, c: 3 });
